@@ -30,66 +30,44 @@ export default function News(props) {
 
 
   useEffect(() => {
-    // const fetchData = async () => {
-    //   try {
-    //     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${page}`;
-    //     const response = await fetch(url);
-    //     const data = await response.json();
-    //     setNewsData(data.articles);
-    //   } catch (error) {
-    //     console.error('Error fetching data:', error);
-    //   }
-
-    //   document.title =`${props.category} - NewsJunction`;
-    // };
-
     const fetchData = async () => {
       try {
         const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${page}`;
-        const response = await axios.get(url); // Use Axios to make the request
-        const data = response.data;
+        const response = await fetch(url);
+        const data = await response.json();
         setNewsData(data.articles);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
-    
-      document.title = `${props.category} - NewsJunction`;
+
+      document.title =`${props.category} - NewsJunction`;
     };
+
+    // const fetchData = async () => {
+    //   try {
+    //     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${page}`;
+    //     const response = await axios.get(url); // Use Axios to make the request
+    //     const data = response.data;
+    //     setNewsData(data.articles);
+    //   } catch (error) {
+    //     console.error('Error fetching data:', error);
+    //   }
+    
+    //   document.title = `${props.category} - NewsJunction`;
+    // };
 
     fetchData();
   }, [page]);
 
 
-  // const handleNextClick = async () => {
-  //   const nextPage = page + 1;
-  //   const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${nextPage}`;
-
-  //   try {
-  //     const response = await fetch(url);
-  //     const data = await response.json();
-
-  //     if (data.articles.length === 0) {
-  //       // If there are no more articles, disable the "Next" button
-  //       // You can also set a message or take other actions
-  //     } else {
-  //       // If there is more data, update the page
-  //       setPage(nextPage);
-  //       setNewsData(data.articles);
-  //     }
-  //   } catch (error) {
-  //     console.error('Error fetching data:', error);
-  //   }
-  // };
-
-
   const handleNextClick = async () => {
     const nextPage = page + 1;
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${nextPage}`;
-  
+
     try {
-      const response = await axios.get(url); // Use Axios for the next page request
-      const data = response.data;
-  
+      const response = await fetch(url);
+      const data = await response.json();
+
       if (data.articles.length === 0) {
         // If there are no more articles, disable the "Next" button
         // You can also set a message or take other actions
@@ -102,6 +80,28 @@ export default function News(props) {
       console.error('Error fetching data:', error);
     }
   };
+
+
+  // const handleNextClick = async () => {
+  //   const nextPage = page + 1;
+  //   const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${nextPage}`;
+  
+  //   try {
+  //     const response = await axios.get(url); // Use Axios for the next page request
+  //     const data = response.data;
+  
+  //     if (data.articles.length === 0) {
+  //       // If there are no more articles, disable the "Next" button
+  //       // You can also set a message or take other actions
+  //     } else {
+  //       // If there is more data, update the page
+  //       setPage(nextPage);
+  //       setNewsData(data.articles);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //   }
+  // };
 
 
   const handlePreviousClick = () => {
