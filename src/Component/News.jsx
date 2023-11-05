@@ -33,6 +33,7 @@ export default function News(props) {
     const fetchData = async () => {
       try {
         const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${page}`;
+        console.log("Trying")
         const response = await fetch(url);
         const data = await response.json();
         console.log(response);
