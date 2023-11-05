@@ -6,6 +6,7 @@ function App() {
   return (
     <Router>
       <>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Outlet />}>
             <Route index element={<News key="General"  country="in" category="General" />} />
