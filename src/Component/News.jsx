@@ -35,6 +35,7 @@ export default function News(props) {
         const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=83faf5d26793455bb96df1dc7fa7d048&page=${page}`;
         const response = await fetch(url);
         const data = await response.json();
+        console.log(response);
         setNewsData(data.articles);
       } catch (error) {
         console.error('Error fetching data:', error);
