@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "totalResults": 11338,
+  "articles": 
+    {
+      "source": {
+        "id": null,
+        "name": "La Tribune.fr"
+      },
+      "author": null,
+      "title": "Voitures électriques : une guerre que les constructeurs automobiles européens ne peuvent pas perdre",
+      "description": "OPINION. La concurrence fait rage entre les constructeurs automobiles européens. Pour ceux-ci, la transition vers la voiture électrique est un enjeu de survie face aux modèles à bas coût chinois. Par Bing Yuan, Gérante Actions internationales chez Edmond de R…",
+      "url": "https://www.latribune.fr/opinions/tribunes/voitures-electriques-une-guerre-que-les-constructeurs-automobiles-europeens-ne-peuvent-pas-perdre-981334.html",
+      "urlToImage": "https://static.latribune.fr/full_width/2255974/bing-yuan.jpg",
+      "publishedAt": "2023-10-24T06:08:00Z",
+      "content": "« Il s'agit d'une véritable bataille. Ils [les constructeurs chinois de véhicules électriques] sont clairement très compétitifs sur la chaîne de valeur des voitures électriques. Je pense qu'ils ont u… [+6202 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Journal du geek"
+      },
+      "author": "tristan carballeda",
+      "title": "Dans cette vidéo, Tesla semble avoir atteint la conduite 100% autonome",
+      "description": "Tesla semble avoir repris une longueur d'avance dans le domaine des voitures autonomes. Son FSD est plus avancé que jamais. \nDans cette vidéo, Tesla semble avoir atteint la conduite 100% autonome",
+      "url": "https://www.journaldugeek.com/2023/10/24/video-tesla-conduite-autonome-100/",
+      "urlToImage": "https://www.journaldugeek.com/content/uploads/2023/10/tesla-cameras.jpg",
+      "publishedAt": "2023-10-24T06:00:38Z",
+      "content": "Tesla semble avoir repris une longueur d'avance dans le domaine des voitures autonomes. Son FSD est plus avancé que jamais.Le constructeur américain Tesla s’est fait remarquer depuis de nombreuses an… [+3634 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Shifter.no"
+      },
+      "author": "Joakim Birkeli Jacobsen",
+      "title": "Northvolt planlegger en av Europas største børsnoteringer",
+      "description": "Den svenske batterifabrikken Northvolt planlegger å gå på børs i Stockholm i en av de største børsintroduksjonene for et europeisk selskap de siste årene.",
+      "url": "https://www.shifter.no/nyheter/northvolt-planlegger-en-av-europas-storste-borsnoteringer/290683",
+      "urlToImage": "https://image.shifter.no/290689.jpg?imageId=290689&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683",
+      "publishedAt": "2023-10-24T05:53:14Z",
+      "content": "Northvolt har invitert investeringsbanker til å formelt pitche for roller i børsintroduksjonen som kan verdsette selskapet til rundt $20 milliarder, ifølge Financial Times.\r\nNorthvolt ble grunnlagt i… [+1229 chars]"
+    },
+}
