@@ -1,6 +1,6 @@
 import Navbar from "./Component/Navbar";
 import News from "./Component/News";
-import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,Outlet } from 'react-router-dom';
 
 function App() {
   return (
